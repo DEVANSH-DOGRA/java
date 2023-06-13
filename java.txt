@@ -1,0 +1,155 @@
+
+System.out.print("Hello World");//The next print statement prints in the same line
+System.out.println("Hello World");//The next print statement prints in the next line
+******************************************************************************************
+
+
+If you don't want others (or yourself) to overwrite existing values, use the final keyword.
+final int mynum=100;
+////////////////////
+final int myNum = 15;
+myNum = 20;//ERROR WILL BE GENERATED
+
+
+*******************************************************************************************
+Java Type Casting:
+
+Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double
+
+Narrowing Casting (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte
+
+
+*********************************************************************************************
+STRINGS:
+
+String txt="ABCDEF";
+
+length() function:
+
+int len=txt.length();
+
+
+toUpperCase() and toLowerCase():
+
+txt.toUpperCase();
+txt.toLowerCase();
+
+indexOf() function: The indexOf() method returns the index (the position) of the first occurrence of a specified text in a string (including whitespace)
+String txt = "Please locate where 'locate' occurs!";
+System.out.println(txt.indexOf("locate")); // Outputs 7
+
+
+charAt()	Returns the character at the specified index (position)
+int i=txt.charAt(index);
+
+compareTo()	Compares two strings lexicographically
+String str1="Hello";
+String str2="HellO";
+int i=str1.compareTo(str2);//outputs 32
+
+compareToIgnoreCase()	Compares two strings lexicographically, ignoring case differences
+
+
+concat()	Appends a string to the end of another string
+firstName.concat(lastName);
+
+
+*****************************************************************************************************
+User input:
+
+import java.util.Scanner; OR import java.util.*;
+class mainn{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+float m;
+String user;
+System.out.println("Enter the username");
+user=sc.nextLine();
+System.out.println("Enter interger");
+n=sc.nextInt();
+System.out.println("Enter float ");
+m=sc.nextFloat();
+}
+}
+
+********************************************************************************************************
+Data Type	Size	     Range
+byte	       1 byte	    -128 to 127
+short	       2 bytes	    -32,768 to 32,767
+int	       4 bytes	    -2,147,483,648 to 2,147,483,647 || 2^31-1 
+long	       8 bytes	    -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+***********************************************************************************************************
+Creating an object of class is called INSTANTIATING.
+*******************************************************************
+Short-hand or ternary operators: Syntax:
+variable = (condition) ? expressionTrue :  expressionFalse;
+---------------------------------------------------------------------------
+===========================================================================
+
+CLASSES AND OBJECTS (OOPS):
+
+creating object of the class: 
+classname objectname=new classname();
+==============================================================================
+-------------------------------------------------------------------------------
+
+Loop Through an Array with For-Each:
+for(type variable:arrayname){
+}
+
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+=======================================================================
+when array length is entered by user:
+
+int len=sc.nextInt();
+int arr[]=new int[len+1];
+
+-----------------------------------------------------------
+Character array to strings :
+ class String_demo 
+    {
+        public static void main(String args[])
+        {
+            char chars[] = {'a', 'b', 'c'};
+            String s = new String(chars);
+            System.out.println(s);
+        }
+   }
+//  abc will be printed.
+****************************************************************************
+
+ABSTRACT CLASS:
+
+Abstract class: is a restricted class that cannot be used to create objects 
+Abstract method: can only be used in an abstract class, and it does not have a body. 
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+ARRAY LIST:
+
+Syntax:
+
+	ArrayList <Integer> ls=new ArrayList<Integer>();
+
+ls.size()--->to get length
+ls.add(2)-->to add value------>ls.add(2,4)-add 4 at index 2;
+ls.remove(3)-->remove
+ls.get(2)-->get value at index 2;
+ls.set(2,4)-->to set value at index 2 as 4
+
+***************************************************************************************
+
+LINKED LIST:
+
+Identical to array list.
+same syntax:
+LinkedList<String> cars=new LinkedList<String>();
+	
